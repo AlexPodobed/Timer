@@ -1,7 +1,9 @@
 (function() {
-	var controller = new ClockController();
+        var clock_controller = new ClockController();
+        var dnd_controller = new dragNdropController();
 
-	window.onload = function() {
-		controller.init();
-	};
+        window.onload = function() {
+                clock_controller.init();
+                dnd_controller.init();
+        };
 })();
